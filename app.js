@@ -4,6 +4,9 @@ const BasicRouter = require("./routes/basic.routes");
 const server = express();
 //import router
 
+server.use(express.json());
+server.use(express.urlencoded({extended:false}))
+
 //to use a basic route in app.js we will use method called as 'use'
 //heree "use" is a middlewear
 //middleweaer are use to add / inject the functionality in your application

@@ -3,27 +3,12 @@ const mongoose = require("mongoose");
 
 //create model
 const UserSchema = new mongoose.Schema({
-  id: { type: Number },
   name: { type: String },
   username: { type: String },
   email: { type: String },
-  address: {
-    street: { type: String },
-    suite: { type: String },
-    city: { type: String },
-    zipcode: { type: String },
-    geo: {
-      lat: { type: Number },
-      lng: { type: Number },
-    },
-  },
+  address: { type: String },
   phone: { type: String },
-  website: { type: String },
-  company: {
-    name: { type: String },
-    catchPhrase: { type: String },
-    bs: { type: String },
-  },
+  password: { type: String },
 });
 
 //create model
